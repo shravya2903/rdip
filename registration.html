@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+.container{
+position: relative;
+}
+img.logo{
+float:left;
+width:12%;
+height:12%;
+}
+.top-right{
+text-align:right;
+}
+a.a1:link, a.a1:visited {
+  padding: 30px 0px 15px 20px;
+  text-align: center;
+  display: inline-block;
+  color: blue;
+  font-size: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+table, td, th {
+  text-align:center;
+  font-weight:bold;
+}
+table {
+  border-collapse: collapse;
+}
+tr,td{
+  height: 30px;
+}
+img.profile{
+float:right;
+}
+.det,.nav{
+clear: left;
+}
+input[type=text],[type=email], select {
+				width: 70%;
+				padding: 5px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				backgorund-color:grey
+				}
+				input[type=checkbox],[type=radio], select {
+				padding: 12px 20px;
+				margin: 8px 4px;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				}
+</style>
+</head>
+<div class="container">
+<img class="logo" src = "https://www.iiit.ac.in/img/iiit-new.png">
+<div class="top-right">
+<a class ="a1" href="https://www.iiit.ac.in/"><b>RDIP</b></a></div>
+</div>
+<br><br>
+<div class="nav">
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="registration.html">Registration Form</a></li>
+</ul></div>
+<br><br>
+<form action="details.html" method="get">
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        First Name:
+                    </td>
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail:
+                    </td>					
+                    <td>
+                        <input type="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone No:
+                    </td>
+					
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>					
+                    <td>
+                        <input type="radio" name="gender" id="m" value="Male">
+						<label for="m">Male</label>
+						<input type="radio" name="gender" id="f" value="Female">
+						<label for="f">Female</label>
+						<input type="radio" name="gender" id="o" value="Male">
+						<label for="o">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Reason for RDIP:
+                    </td>
+					
+                    <td>
+                        <input type="checkbox" name="choice" id="html" value="HTML">
+						<label for="html">HTML</label>
+						<input type="checkbox" name="choice" id="css" value="CSS">
+						<label for="css">CSS</label>
+						<input type="checkbox" name="choice" id="js" value="JS">
+						<label for="js">JavaScript</label>
+                    </td>
+                </tr>
+				<tr>
+                    <td>
+                        College:
+                    </td>					
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+				<tr>
+                    <td>
+                        <input type="checkbox" name="dec" id="d" value="yes" required>
+                    </td>					
+                    <td>
+						<label for="d">I declare above details given by me are true</label>
+                    </td>
+                </tr>
+				<tr>
+					<td><input type="submit" value="submit"></td>
+					<td><input type="reset" value="reset"></td>
+				</tr>
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+</head>
+</html>
