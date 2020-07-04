@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="validation.js"></script>
+<link rel="stylesheet" type="text/css" href="gameStyles.css"/>
+</head>
+<body>
+<p id="heading">Hey there!&nbsp; Shall we play a game?</p>
+<h1 id="title">Who will Survive?</h1>
+<br><br>
+<form>
+<input type="button" id="generate" value="Generate The Numbers" onclick = "window.view.generate();">
+<table>
+<tr>
+<td>Enter the first number</td>
+<td><input type="text" id="val1" ></td>
+</tr>
+<tr>
+<td>Enter the second number</td>
+<td><input type="text" id="val2" ></td>
+</tr>
+</table>
+
+<input type="button" id="gameSubmit" value="Who WINS?"onclick = "window.view.validate();">
+</form>
+<br><br>
+Here is the result:
+<p id="result"> </p>
+</body>
+</html>

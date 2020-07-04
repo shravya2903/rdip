@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<title>
+Form Validation
+</title>
+<link rel="stylesheet" type="text/css" href="formStyles.css"/>
+<script src="validation.js"></script>
+</head>
+<body>
+<div>
+<form>
+<table class='my_table' >
+<tr> <td>Name</td> <td><input type="text" id="name" name="Name" required></td> </tr> 
+<tr> <td>Phone Number</td> <td><input type="text" id="phno" name="Phno" required></td> </tr>
+<tr> <td>E-mail</td> <td><input type="email" id="email" name="Email" required></td> </tr>
+</table>
+<input type="button" id="submitButton" value ="Validate">
+</div>
+<br><br>
+<p id="isValid"></p>
+</form>
+</body>
+</html>

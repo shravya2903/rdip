@@ -1,0 +1,43 @@
+<html>
+   <head>
+	<link rel="stylesheet" type="text/css" href="calStyles.css"/>
+	<script src="validation.js"></script>
+   </head>
+   <body>
+      <form name="calculator">
+		<input type="text" name="display" id="display" >
+		   <table>
+		   <tr>
+              <td><input type="button" id="num7" name="seven" value="7" onclick="window.view.cals(this.value);" ></td>
+              <td><input type="button" id="num8"name="eight" value="8" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="num9" name="nine" value="9" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="opClear" name="clear" value="C" onclick="window.view.cals(this.value);"></td>
+           </tr>
+		   <tr>
+              <td><input type="button" id="num4" name="four" value="4" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="num5" name="five" value="5" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="num6" name="six" value="6" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="opMultiply" name="multiply" value="*" onclick="window.view.cals(this.value);"></td>
+           </tr>
+		   <tr>
+              <td><input type="button" id="num1" name="one" value="1" onclick="window.view.cals(this.value);" ></td>
+              <td><input type="button" id="num2" name="two" value="2" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="num3" name="three" value="3" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="opDivide" name="div" value="/"onclick="window.view.cals(this.value);"></td>
+           </tr>
+		   <tr>
+              <td><input type="button" id="opDot" value="."onclick="window.view.cals(this.value);" ></td>
+              <td><input type="button" id="num0" name="zero" value="0" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="opPercent" name="percent" value="%"onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="opAbs" name="abs" value="Ab" onclick="window.view.abs(this.value);"></td>
+           </tr>
+           <tr>
+              <td><input type="button" id="opPlus" name="plus" value="+" onclick="window.view.cals(this.value);"></td>
+              <td><input type="button" id="opMinus" name="minus" value="-"onclick="window.view.cals(this.value);" ></td>
+              <td><input type="button" id="opSq" name="sqroot" value="Sq" onclick="window.view.sqrt(this.value);"></td>
+              <td><input type="button" id="opEqual" name="equal" value="=" onclick="window.view.cal(document.getElementById('display').value);"></td>
+           </tr>
+        </table>
+      </form>
+   </body>
+</html>
